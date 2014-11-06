@@ -7,7 +7,7 @@ object MinimumWage {
 
 		def dumpAdjustedWage(wage: Double, adj: Adjustment) = {
 			val next_years_wage = wage * (1 + adj.increase / 100.0)
-			println(s"${adj.year + 1} -> ${wage_fmt.format(next_years_wage)} (${inc_fmt.format(adj.increase)}%)")
+			println(s"${adj.year + 1} -> ${wage_fmt.format(next_years_wage)}")
 			next_years_wage
 		}
 
